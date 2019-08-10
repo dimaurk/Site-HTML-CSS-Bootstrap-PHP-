@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stolbov - Ворота КМ-1</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/katalog.css">
+  </head>
+<body>
+
+<div class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">ST<i class="fa fa-circle"></i>LBO</i><i class="fa fa-vimeo"></i></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="uslugy.html">Услуги</a></li>
+		  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог товаров<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="zabory.html">Заборы</a></li>
+					<li><a href="kalitki.html">Калитки</a></li>
+					<li><a href="vorota.html">Ворота</a></li>
+					<li><a href="kozurki.html">Козырьки</a></li>
+				</ul>
+			</li>
+          <li><a href="kontakty.html">Контакты</a></li>
+          <li><a  data-toggle="modal" data-target="#basicModal"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+	
+<div class="container content">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="list-group">
+				<a href="zabory.html" class="list-group-item">Заборы</a>
+				<a href="kalitki.html" class="list-group-item">Калитки</a>
+				<a href="vorota.html" class="list-group-item">Ворота</a>
+				<a href="kozurki.html" class="list-group-item">Козырьки</a>
+			</div>
+		</div>
+		<div class="col-md-9 products">
+		<h3><img class="imgzab" src="img/vor/в1.jpg" style="width: 70%; height: 350px;"><br><b>Ворота КМ-1</b></h3>
+		<h4><span class="colortext">Товар под заказ</span></h4>
+		<h3>Заказать товар вы можете по телефону VELCOM +375 29 332-55-65 или MTC +375 33 691-52-04<br>
+		График работы: 10.00 - 18.00, пн - пт.
+		</h3>
+		</div>
+	</div>
+</div>
+	
+	<div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+       <div class="modal-content">
+          <div class="modal-header"><button class="close" type="button" data-dismiss="modal">x</button>
+             <h2 class="modal-title" id="myModalLabel">Обратная связь</h2>
+          </div>
+			<div class="modal-body">
+				<form name="MyForm" action="http://Дипломная/mail.php" method="post">
+					<p><input class="input" name="name" type="text" style="width:40%" /> Ваше имя<span class="massagecolortext">*</span></p>
+					<p><input class="input" name="email" type="text" style="width:40%" /> Электронная почта<span class="massagecolortext">*</span></p>
+					<p><input class="input" name="sub" type="text" style="width:40%" /> Тема сообщения</p>
+					<p>Текст сообщения:<br /><textarea name="body" cols="1" rows="5" style="width:70%" /></textarea></p>
+					<p><input id="submit" value="Отправить" type="submit" /></p>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="collslast">
+		<div class="container">
+		<h5 align="center">@StolbovCampanies</h5>
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
