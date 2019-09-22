@@ -2,13 +2,13 @@
 <html>
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stolbov - поиск</title>
+  <title>Stolbov - контакты</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/catalog.css">
   </head>
 <body>
+
 <div class="navbar navbar-inverse">
     <div class="container">
       <div class="navbar-header">
@@ -18,7 +18,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">ST<i class="fa fa-circle"></i>LBO</i><i class="fa fa-vimeo"></i></a>
-      </div> 
+      </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
 		  <li><a href="search.html">Поиск</a></li>
@@ -38,16 +38,18 @@
         </ul>
       </div>
     </div>
+</div>
+	<div class="container">
+	<h1><img src="img/contacts/velcom.png" style="width: 30px; height: 30px;">VELCOM  +375 29 332-55-65<br>
+		<img src="img/contacts/mtc.jpg" style="width: 30px; height: 30px;">MTC  +375 33 691-52-04
+   </h1>
+	<h1>
+	Адрес: Могилев,ул.Калужская, 27<br>
+	График работы: 10.00 - 18.00, пн - пт.<br><br>
+</h1>
 	</div>
 	
-<?php
-
-	
-
-?>
-
-</div>
-<div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
+	<div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
        <div class="modal-content">
           <div class="modal-header"><button class="close" type="button" data-dismiss="modal">x</button>
@@ -66,7 +68,9 @@
 	</div>
 </div>
 
-<script>
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0bee85980b7047c6eb8c2f2cb6a246d343a2d6b3bc0d4f370ffb31856e2fc82d&amp;width=100%25&amp;height=600&amp;lang=ru_UA&amp;scroll=true"></script>
+	
+	<script>
 function check() {
 	if ($('#input').val() != '')
 		$('#button123').removeAttr('disabled');
@@ -92,12 +96,11 @@ function check() {
 	</div>
 </div>
 
-<div class="collslast">
+	<div class="collslast">
 		<div class="container">
 		<h5 align="center">@StolbovCampanies</h5>
 		</div>
 	</div>
-	
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
