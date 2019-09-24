@@ -77,7 +77,7 @@
         $page = 1;
         $offset = 0;
       }
-      $query  = "SELECT * FROM products type = 'Калитка' && visible = '1' LIMIT $offset, $limit";
+      $query  = "SELECT * FROM products WHERE (type = 'Калитка') AND (visible = '1') LIMIT $offset, $limit";
       $result = mysqli_query($link, $query);
       if (mysqli_num_rows($result) > 0 ) 
 		{

@@ -137,6 +137,7 @@ function check() {
 	$('#button123').removeAttr('disabled');
 }
 </script>
+
 <div class="modal fade" id="madalpass" tabindex="-1" role="dialog">
     <div class="modal-dialog">
        <div class="modal-content">
@@ -145,8 +146,9 @@ function check() {
           </div>
 			<div class="modal-body">
 				<form action="enter.php" method="post">
+					<p>Введите логин: <input class="input" onkeyup="check();" type="password" name="paswd" style="width:35%" /></p>
 					<p>Введите пароль: <input class="input" onkeyup="check();" type="password" name="paswd" style="width:35%" /></p>
-					<p><input value="Войти" name="submit" type="submit" id="button123" disabled="disabled" /></p>
+					<p><input class="btn btn-success" value="Войти" name="submit" type="submit" id="button123" disabled="disabled" /></p>
 				</form>
 			</div>
 		</div>

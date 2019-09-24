@@ -77,7 +77,7 @@
         $page = 1;
         $offset = 0;
       }
-      $query  = "SELECT * FROM products type = 'Ворота' && visible = '1' LIMIT $offset, $limit";
+      $query  = "SELECT * FROM products WHERE (type = 'Ворота') AND (visible = '1') LIMIT $offset, $limit";
       $result = mysqli_query($link, $query);
       if (mysqli_num_rows($result) > 0 ) 
 		{
